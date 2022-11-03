@@ -14,7 +14,7 @@
         ul {
             list-style: none;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
         }
 
         li {
@@ -31,16 +31,20 @@
             font-family: 'open-sans',sans-serif;
             text-decoration: none;
             padding: 20px;
-            margin: 15px;
         }
 
         a:hover {
             background-color: black;
         }
 
-        @media (max-width: 1024px) {
+        @media (min-width: 1025px) {
             ul{
-            flex-direction: column;
+            flex-direction: row;
+        }
+
+        a {
+            margin: 15px;
+            
         }
         }
     </style>
